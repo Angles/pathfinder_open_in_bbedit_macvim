@@ -55,6 +55,8 @@
     // Create arguments array
     NSMutableArray *args = [NSMutableArray arrayWithCapacity: (2+[items count])];
     [args addObject:@"-g"];
+	// open in new MacVim tab, not new MacVim osx window
+	[args addObject:@"--remote-tab-silent"];
 	
     // Iterate over Path Finder selection
     NSEnumerator* enumerator = [items objectEnumerator];
