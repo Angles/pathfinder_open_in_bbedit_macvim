@@ -200,7 +200,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = pathfinder_open_in_macvim_Prefix.pch;
 				HEADER_SEARCH_PATHS = (
-					"~/code/xcode/Path\\ Finder\\ SDK/**",
+					"../../Path\\ Finder\\ SDK/**",
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
@@ -218,7 +218,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = pathfinder_open_in_macvim_Prefix.pch;
 				HEADER_SEARCH_PATHS = (
-					"~/code/xcode/Path\\ Finder\\ SDK/**",
+					"../../Path\\ Finder\\ SDK/**",
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
@@ -235,8 +235,12 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../Path\\ Finder\\ SDK/**",
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
+				WRAPPER_EXTENSION = plugin;
 			};
 			name = Debug;
 		};
@@ -247,7 +251,11 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../Path\\ Finder\\ SDK/**",
+				);
 				SDKROOT = macosx;
+				WRAPPER_EXTENSION = plugin;
 			};
 			name = Release;
 		};
